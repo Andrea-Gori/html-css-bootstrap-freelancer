@@ -18,7 +18,31 @@
   color: #FFF
 }
 
+.divider {
+  width: 75%;
+  margin: 15px auto;
+}
 
+.divider i {
+  font-size: 32px;
+}
+
+.divider::after , .divider::before {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 4px;
+  margin-top: 15px;
+  background-color: #FFF;
+}
+
+.divider::before {
+  float: left;
+}
+
+.divider::after {
+  float: right;
+}
 
 #jumbotron {
   padding-top: 100px;
@@ -30,6 +54,10 @@
 #jumbotron img {
   width: 270px;
   margin-bottom: 50px;
+}
+
+#jumbotron p {
+  font-size: 20px;
 }
 
 h1 {
@@ -45,6 +73,24 @@ h1 {
 
   .navbar-default .navbar-brand {
     font-size: 1.5em;
+  }
+
+  .navbar-default .navbar-nav>li>a {
+    font-size: 16px;
+    padding: 1em;
+  }
+
+  #jumbotron h1{
+    font-size: 64px;
+    line-height: 56px;
+  }
+
+  .divider {
+    width: 35%;
+  }
+
+  #jumbotron p {
+    font-size: 24px;
   }
 }
 
