@@ -27,7 +27,8 @@
   font-size: 32px;
 }
 
-.divider::after , .divider::before {
+#jumbotron .divider::after , #jumbotron .divider::before,
+#about .divider::after , #about .divider::before  {
   content: '';
   display: block;
   width: 40%;
@@ -65,6 +66,65 @@ h1 {
   font-weight: bolder;
 }
 
+h2{
+  text-transform: uppercase;
+  font-weight: bolder;
+  font-size: 36px;
+}
+
+#portfolio {
+  padding-bottom: 80px;
+}
+
+#portfolio .divider::after , #portfolio .divider::before,
+#contact-me .divider::after , #contact-me .divider::before {
+  content: '';
+  display: block;
+  width: 40%;
+  height: 4px;
+  margin-top: 15px;
+  background-color: #000;
+}
+
+.divider::before {
+  float: left;
+}
+
+.divider::after {
+  float: right;
+}
+
+#portfolio img {
+  width: 100%;
+  border-radius: 30px;
+  padding: 15px;
+}
+
+#about {
+  background-color: #1abc9c;
+  color: #FFF;
+  padding-bottom: 80px;
+  font-size: 20px;
+}
+
+.btn {
+  margin-top: 20px;
+  border: 2px solid;
+  border-radius: 8px;
+}
+
+.btn-outline-light {
+  color: #f8f9fa;
+  border-color: #f8f9fa;
+}
+
+.btn-xl {
+  padding: 16px 28px;
+  font-size: 20px;
+}
+
+
+
 @media all and (min-width: 992px) {
   .my-navbar-primary{
     padding-top: 1.5rem;
@@ -91,6 +151,10 @@ h1 {
 
   #jumbotron p {
     font-size: 24px;
+  }
+
+  h2{
+    font-size: 48px;
   }
 }
 
