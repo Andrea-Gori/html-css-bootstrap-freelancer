@@ -123,7 +123,31 @@ h2{
   font-size: 20px;
 }
 
+#contact-me {
+  padding-bottom: 80px;
+}
 
+.my-form-group input, .my-form-group  {
+  border: 0;
+  box-shadow: none;
+  font-size: 20px;
+}
+
+textarea {
+  resize: none;
+  margin-top: 30px;
+}
+
+.my-form-group input{
+  border-bottom: 1px solid lightgray;
+}
+
+
+.btn-green {
+  background-color: #1abc9c;
+  border: 0;
+  color: #FFF
+}
 
 @media all and (min-width: 992px) {
   .my-navbar-primary{
